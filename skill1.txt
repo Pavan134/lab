@@ -1,0 +1,42 @@
+skill1
+------
+1.cd xv6
+2.nano square.c
+#include "types.h"
+#include "math.h"
+#include "user.h"
+int main(void){
+printf(1,"square value of 9 is %d",square(9));
+exit();
+}
+3.nano syscall.h
+
+#define SYS_square 22
+4.nano syscall.c
+
+extern int sys_square(void);
+[SYS_square]  sys_square,
+
+5.nano sysproc.c
+
+int sys_square(void){
+int num;
+argptr(0,(void *)&num,sizeof(num));
+return num*num;
+}
+
+6.nano usys.S
+
+SYSCALL(square)
+7.nano user.h
+
+int square(int);
+8.nano Makefile
+In uprogs=[
+_square\
+]
+and In extra=,square.c
+
+7.make clean
+8.make
+9.make qemu-nox
