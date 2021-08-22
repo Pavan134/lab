@@ -1,0 +1,12 @@
+practical1-fork.c,cat.c
+practical2-cp.c,dup2
+practical3-execl,execv,orphan.c,zombie.c,program that creates a new process to copy file
+practical4-unnamedpipe.c,pipe.chalf-bake.cunlink.c
+practical5-attributes.c,lsdir.c,mychown.c,mychmod.c
+practical6-signal.c,killprocess.c,mynice.c,time.c,times.c
+practical7-display the address space of various segments,free(),simple memory allocator
+
+practical8-vm.c,virtual_mem.c,Accessing memory with segmentation
+practical9-fifo.c,lru.c
+
+
