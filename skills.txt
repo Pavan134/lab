@@ -1,0 +1,10 @@
+skill1: square.c
+skill2: cp.c, wc.c, echo.c
+skill3: pwd.c, mv.c, cd.c, exec.c
+skill4: rm.c, getinfo.c
+skill5: mydate.c, ls.c, head.c
+skill6: kill.c, grep.c
+skill7: ps.c, nice.c, dpro.c
+skill8: vm.c, sh.c
+skill9: ps.c, backtrace.c
+skill10 : shared memory ipc to xv6
